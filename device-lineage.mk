@@ -137,3 +137,15 @@ PRODUCT_PACKAGES += \
 
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
+
+DEVICE_PACKAGE_OVERLAYS += \
+	device/google/gs101/overlay_common \
+	device/google/gs101/overlay_bliss
+
+# Rescue Party
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.disable_rescue=true
+
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+BLISS_BUILDTYPE := OFFICIAL
