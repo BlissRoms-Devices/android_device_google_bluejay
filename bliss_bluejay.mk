@@ -13,6 +13,9 @@ $(call inherit-product, device/google/bluejay/aosp_bluejay.mk)
 $(call inherit-product, device/google/gs101/lineage_common.mk)
 $(call inherit-product, device/google/bluejay/device-lineage.mk)
 
+# Gapps
+TARGET_STOCK_GAPPS := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 6a
