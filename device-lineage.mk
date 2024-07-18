@@ -18,6 +18,9 @@ PRODUCT_COPY_FILES += \
 # PixelParts
 include packages/apps/PixelParts/device.mk
 
+# Kernel
+TARGET_PREBUILT_KERNEL := device/google/bluejay-kernel/Image.lz4
+
 # Build necessary packages for vendor
 
 # Audio
